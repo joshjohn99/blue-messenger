@@ -2,6 +2,7 @@ body{
     background-color: #222C36;
     color: white;
     padding: 15px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 h1{
@@ -103,4 +104,4 @@ abbr[title]{
   font-weight: 300;
   font-size: 14px;
   color: #FFFFFF;
-}
+ }
