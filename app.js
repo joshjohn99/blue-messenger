@@ -92,6 +92,12 @@ app.use(express.static(__dirname + '/public'));
 app.get('/', function(req, res) {
         res.sendfile(__dirname + '/public/index.html');
     });
+
+app.get('/subscribe', function(req, res){
+        var email = req.query.email;
+        console.log('Email submitted:', email);
+        res.status(200).send('Email received');
+});
     
 // Create the MQTT server    
 var mqttServe = new mosca.Server({});
