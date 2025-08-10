@@ -25,7 +25,16 @@
 	</div>
 	<br>
     <div class="container">
-    	<h1>Blue Messenger</h1>
+        <h1>Blue Messenger</h1>
+        <br/>
+
+        <form id="email-form" action="/subscribe" method="GET">
+            <div class="form-group">
+                <label for="email">Email address:</label>
+                <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Subscribe</button>
+        </form>
         <br/>
         
         <div class="col-xs-2">

@@ -9,6 +9,15 @@ $(document).ready(function(){
     var duration;
     var spamControl;
     var messageCount = 0;
+
+    $('#email-form').on('submit', function(e){
+        e.preventDefault();
+        var email = $('#email').val();
+        $.get($(this).attr('action'), { email: email })
+            .done(function(){
+                console.log('Email submitted:', email);
+            });
+    });
 	
 	//functions to configure buttons
     //the send button also acts as a connection signal
